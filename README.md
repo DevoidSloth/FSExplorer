@@ -23,15 +23,15 @@
 
 ## Screenshots
 
-<img src=".github/assets/screenshot-drive-picker.svg" alt="Drive picker — choose a volume to analyze" width="100%"/>
+<img src=".github/assets/screenshot-drive-picker.png" alt="Drive picker — choose a volume to analyze" width="100%"/>
 
 <br/>
 
-<img src=".github/assets/screenshot-list.svg" alt="List view — sortable table with size bars and type badges" width="100%"/>
+<img src=".github/assets/screenshot-list.png" alt="List view — sortable table with size bars and type badges" width="100%"/>
 
 <br/>
 
-<img src=".github/assets/screenshot-treemap.svg" alt="Treemap view — squarified layout showing proportional disk usage" width="100%"/>
+<img src=".github/assets/screenshot-treemap.png" alt="Treemap view — squarified layout showing proportional disk usage" width="100%"/>
 
 <br/>
 
