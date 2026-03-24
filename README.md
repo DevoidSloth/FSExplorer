@@ -155,6 +155,12 @@ The full tree is held in a `Mutex<TreeState>` server-side. Navigation calls `get
 
 <br/>
 
+## Support
+
+<a href="https://www.buymeacoffee.com/devoidsloth"><img src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=&slug=devoidsloth&button_colour=C0FF44&font_colour=0D0F1A&font_family=Cookie&outline_colour=0D0F1A&coffee_colour=0D0F1A" /></a>
+
+<br/>
+
 ## License
 
 [MIT](LICENSE) © DevoidSloth
