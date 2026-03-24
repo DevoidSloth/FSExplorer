@@ -1,0 +1,23 @@
+<svg viewBox="0 0 1024 1024" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="1024" height="1024" rx="180" fill="#0D0F1A"/>
+
+  <!-- Subtle inner glow at top -->
+  <radialGradient id="glow" cx="50%" cy="0%" r="70%">
+    <stop offset="0%"   stop-color="#C0FF44" stop-opacity="0.07"/>
+    <stop offset="100%" stop-color="#C0FF44" stop-opacity="0"/>
+  </radialGradient>
+  <rect width="1024" height="1024" rx="180" fill="url(#glow)"/>
+
+  <!-- Large tile — dominant item, top-left -->
+  <rect x="60" y="60" width="500" height="500" rx="40" fill="#C0FF44"/>
+
+  <!-- Right column — two stacked tiles -->
+  <rect x="580" y="60"  width="384" height="240" rx="24" fill="#C0FF44" fill-opacity="0.55"/>
+  <rect x="580" y="320" width="384" height="240" rx="24" fill="#C0FF44" fill-opacity="0.30"/>
+
+  <!-- Bottom row — three tiles -->
+  <rect x="60"  y="580" width="288" height="384" rx="24" fill="#C0FF44" fill-opacity="0.65"/>
+  <rect x="368" y="580" width="288" height="384" rx="24" fill="#C0FF44" fill-opacity="0.38"/>
+  <rect x="676" y="580" width="288" height="384" rx="24" fill="#C0FF44" fill-opacity="0.18"/>
+</svg>

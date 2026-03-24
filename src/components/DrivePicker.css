@@ -35,12 +35,10 @@
   gap: 8px;
 }
 
-.drive-picker__icon {
-  font-size: 40px;
-  color: var(--accent);
-  line-height: 1;
+.drive-picker__logomark {
   display: block;
-  filter: drop-shadow(0 0 20px rgba(192, 255, 68, 0.4));
+  filter: drop-shadow(0 0 24px rgba(192, 255, 68, 0.35));
+  border-radius: 13px;
 }
 
 .drive-picker__title {

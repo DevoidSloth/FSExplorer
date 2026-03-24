@@ -1,4 +1,5 @@
 import { DriveInfo, formatSize } from '../types';
+import { LogoMark } from './LogoMark';
 import './DrivePicker.css';
 
 interface Props {
@@ -13,7 +14,7 @@ export function DrivePicker({ drives, onScan, error, loading }: Props) {
     <div className="drive-picker">
       <div className="drive-picker__inner">
         <div className="drive-picker__logo">
-          <span className="drive-picker__icon">◈</span>
+          <LogoMark size={64} className="drive-picker__logomark" />
           <h1 className="drive-picker__title">FSExplorer</h1>
           <p className="drive-picker__subtitle">Disk Space Analyzer</p>
         </div>

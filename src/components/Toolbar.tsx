@@ -1,4 +1,5 @@
 import { DriveInfo, FileType, SortDir, SortField, ViewMode, FILE_TYPE_LABELS, formatSize } from '../types';
+import { LogoMark } from './LogoMark';
 import './Toolbar.css';
 
 interface Props {
@@ -33,7 +34,7 @@ export function Toolbar({
     <div className="toolbar">
       <div className="toolbar__left">
         <button className="toolbar__back" onClick={onChangeDrive} title="Choose drive">
-          ◈
+          <LogoMark size={22} />
         </button>
 
         <div className="toolbar__drive">

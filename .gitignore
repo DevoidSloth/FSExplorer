@@ -28,3 +28,4 @@ src-tauri/target/
 
 # Claude Code
 .claude/
+*.txt
