@@ -1,0 +1,231 @@
+.drive-picker {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg-base);
+  position: relative;
+  overflow: hidden;
+}
+
+.drive-picker::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse 60% 40% at 50% 0%, rgba(192, 255, 68, 0.06) 0%, transparent 70%),
+    radial-gradient(ellipse 40% 30% at 80% 80%, rgba(74, 144, 217, 0.04) 0%, transparent 60%);
+  pointer-events: none;
+}
+
+.drive-picker__inner {
+  width: 100%;
+  max-width: 560px;
+  padding: 48px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+.drive-picker__logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.drive-picker__icon {
+  font-size: 40px;
+  color: var(--accent);
+  line-height: 1;
+  display: block;
+  filter: drop-shadow(0 0 20px rgba(192, 255, 68, 0.4));
+}
+
+.drive-picker__title {
+  font-family: var(--font-mono);
+  font-size: 28px;
+  font-weight: 600;
+  letter-spacing: -0.5px;
+  color: var(--text-primary);
+}
+
+.drive-picker__subtitle {
+  font-size: 13px;
+  color: var(--text-muted);
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.drive-picker__loading,
+.drive-picker__empty {
+  color: var(--text-secondary);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.drive-picker__error {
+  color: var(--danger);
+  background: var(--danger-dim);
+  padding: 8px 14px;
+  border-radius: var(--radius);
+  font-size: 12px;
+  border: 1px solid rgba(255, 71, 87, 0.2);
+}
+
+.drive-picker__grid {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+}
+
+/* Drive Card */
+.drive-card {
+  background: var(--bg-surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 20px;
+  min-width: 200px;
+  flex: 1;
+  max-width: 240px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  text-align: left;
+  cursor: pointer;
+  transition: border-color 0.15s, background 0.15s, transform 0.1s;
+  position: relative;
+  overflow: hidden;
+}
+
+.drive-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse 80% 50% at 50% 0%, rgba(192, 255, 68, 0.04) 0%, transparent 60%);
+  opacity: 0;
+  transition: opacity 0.15s;
+}
+
+.drive-card:hover {
+  border-color: var(--border-strong);
+  background: var(--bg-elevated);
+  transform: translateY(-2px);
+}
+
+.drive-card:hover::before {
+  opacity: 1;
+}
+
+.drive-card:active {
+  transform: translateY(0);
+}
+
+.drive-card--critical .drive-card__bar {
+  background: var(--danger) !important;
+}
+
+.drive-card--critical .drive-card__pct {
+  color: var(--danger);
+}
+
+.drive-card__header {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+}
+
+.drive-card__letter {
+  font-family: var(--font-mono);
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.drive-card__label {
+  font-size: 11px;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 120px;
+}
+
+.drive-card__bar-wrap {
+  height: 3px;
+  background: var(--bg-hover);
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.drive-card__bar {
+  height: 100%;
+  background: var(--accent);
+  border-radius: 2px;
+  transition: width 0.4s ease;
+}
+
+.drive-card__stats {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 11px;
+}
+
+.drive-card__used {
+  color: var(--text-secondary);
+  font-family: var(--font-mono);
+}
+
+.drive-card__pct {
+  font-family: var(--font-mono);
+  font-weight: 600;
+  color: var(--accent);
+  font-size: 12px;
+}
+
+.drive-card__total {
+  color: var(--text-muted);
+  font-family: var(--font-mono);
+}
+
+.drive-card__free {
+  font-size: 11px;
+  color: var(--text-muted);
+  font-family: var(--font-mono);
+}
+
+.drive-card__cta {
+  font-size: 11px;
+  color: var(--accent);
+  font-weight: 500;
+  letter-spacing: 0.3px;
+  opacity: 0;
+  transition: opacity 0.15s;
+}
+
+.drive-card:hover .drive-card__cta {
+  opacity: 1;
+}
+
+/* Spinner */
+.spinner {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  border: 2px solid var(--border-strong);
+  border-top-color: var(--accent);
+  border-radius: 50%;
+  animation: spin 0.7s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
