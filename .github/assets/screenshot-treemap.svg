@@ -1,0 +1,107 @@
+<svg viewBox="0 0 1280 800" xmlns="http://www.w3.org/2000/svg">
+  <!-- ── Toolbar (identical to list view) ── -->
+  <rect width="1280" height="48" fill="#0E1017"/>
+  <line x1="0" y1="48" x2="1280" y2="48" stroke="#1A1D2E" stroke-width="1"/>
+  <g transform="translate(12,14) scale(0.417)">
+    <rect width="48" height="48" rx="10" fill="#0D0F1A"/>
+    <rect x="3" y="3" width="22" height="22" rx="3" fill="#C0FF44"/>
+    <rect x="27" y="3" width="18" height="10" rx="2" fill="#C0FF44" fill-opacity="0.55"/>
+    <rect x="27" y="15" width="18" height="10" rx="2" fill="#C0FF44" fill-opacity="0.30"/>
+    <rect x="3" y="27" width="10" height="18" rx="2" fill="#C0FF44" fill-opacity="0.65"/>
+    <rect x="15" y="27" width="10" height="18" rx="2" fill="#C0FF44" fill-opacity="0.38"/>
+    <rect x="27" y="27" width="18" height="18" rx="2" fill="#C0FF44" fill-opacity="0.18"/>
+  </g>
+  <text x="42" y="29" font-family="'Courier New', Courier, monospace" font-size="15" font-weight="700" fill="#FFFFFF">C:</text>
+  <text x="62" y="29" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="11" fill="#555">871 GB / 1 TB · 87% used</text>
+  <text x="484" y="20" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10" fill="#444">TYPE</text>
+  <rect x="484" y="26" width="88" height="16" rx="3" fill="#12151F" stroke="#1E2535" stroke-width="1"/>
+  <text x="492" y="38" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="11" fill="#888">All</text>
+  <text x="586" y="20" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10" fill="#444">SORT</text>
+  <rect x="586" y="26" width="88" height="16" rx="3" fill="#12151F" stroke="#1E2535" stroke-width="1"/>
+  <text x="594" y="38" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="11" fill="#888">Size ↓</text>
+  <rect x="688" y="14" width="28" height="22" rx="4" fill="#12151F" stroke="#1E2535" stroke-width="1"/>
+  <text x="702" y="29" text-anchor="middle" font-family="'Courier New', Courier, monospace" font-size="14" fill="#555">≡</text>
+  <rect x="718" y="14" width="28" height="22" rx="4" fill="#C0FF44" fill-opacity="0.12" stroke="#C0FF44" stroke-opacity="0.4" stroke-width="1"/>
+  <text x="732" y="29" text-anchor="middle" font-family="'Courier New', Courier, monospace" font-size="14" fill="#C0FF44">⊞</text>
+  <rect x="1178" y="12" width="88" height="24" rx="4" fill="#12151F" stroke="#1E2535" stroke-width="1"/>
+  <text x="1222" y="28" text-anchor="middle" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="12" fill="#888">↻ Rescan</text>
+
+  <!-- ── Breadcrumb ── -->
+  <rect x="0" y="48" width="1280" height="32" fill="#0A0B12"/>
+  <line x1="0" y1="80" x2="1280" y2="80" stroke="#14172A" stroke-width="1"/>
+  <text x="16" y="68" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" fill="#C0FF44">C:</text>
+  <text x="36" y="68" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" fill="#333">›</text>
+  <text x="48" y="68" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" fill="#555">Users</text>
+  <text x="92" y="68" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" fill="#333">›</text>
+  <text x="104" y="68" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" fill="#CCCCCC">jason</text>
+
+  <!-- ── Treemap content (y=80 to y=764, h=684) ── -->
+  <rect x="0" y="80" width="1280" height="684" fill="#0A0B12"/>
+
+  <!-- AppData — large, folder blue — top-left, ~56% -->
+  <rect x="2" y="82" width="700" height="420" rx="0" fill="#4A90D9" fill-opacity="0.85"/>
+  <rect x="2" y="82" width="700" height="420" fill="none" stroke="#0A0B12" stroke-width="2"/>
+  <text x="18" y="108" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="16" font-weight="600" fill="#FFF">AppData</text>
+  <text x="18" y="126" font-family="'Courier New', Courier, monospace" font-size="13" fill="rgba(255,255,255,0.6)">45.21 GB</text>
+
+  <!-- .cargo — folder blue — bottom-left -->
+  <rect x="2" y="504" width="700" height="258" rx="0" fill="#4A90D9" fill-opacity="0.55"/>
+  <rect x="2" y="504" width="700" height="258" fill="none" stroke="#0A0B12" stroke-width="2"/>
+  <text x="18" y="530" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="14" font-weight="600" fill="#FFF">.cargo</text>
+  <text x="18" y="548" font-family="'Courier New', Courier, monospace" font-size="12" fill="rgba(255,255,255,0.5)">12.84 GB</text>
+
+  <!-- Videos — purple — top right, upper -->
+  <rect x="704" y="82" width="380" height="350" rx="0" fill="#9B59B6" fill-opacity="0.85"/>
+  <rect x="704" y="82" width="380" height="350" fill="none" stroke="#0A0B12" stroke-width="2"/>
+  <text x="720" y="108" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="14" font-weight="600" fill="#FFF">Videos</text>
+  <text x="720" y="126" font-family="'Courier New', Courier, monospace" font-size="12" fill="rgba(255,255,255,0.55)">8.43 GB</text>
+
+  <!-- Downloads — folder blue — top far right -->
+  <rect x="1086" y="82" width="192" height="350" rx="0" fill="#4A90D9" fill-opacity="0.65"/>
+  <rect x="1086" y="82" width="192" height="350" fill="none" stroke="#0A0B12" stroke-width="2"/>
+  <text x="1098" y="108" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#FFF">Downloads</text>
+  <text x="1098" y="126" font-family="'Courier New', Courier, monospace" font-size="12" fill="rgba(255,255,255,0.5)">6.12 GB</text>
+
+  <!-- Documents — document blue — bottom right, left -->
+  <rect x="704" y="434" width="220" height="328" rx="0" fill="#3498DB" fill-opacity="0.8"/>
+  <rect x="704" y="434" width="220" height="328" fill="none" stroke="#0A0B12" stroke-width="2"/>
+  <text x="716" y="460" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#FFF">Documents</text>
+  <text x="716" y="478" font-family="'Courier New', Courier, monospace" font-size="11" fill="rgba(255,255,255,0.5)">2.31 GB</text>
+
+  <!-- Pictures — image orange — bottom right, mid -->
+  <rect x="926" y="434" width="170" height="180" rx="0" fill="#E8855A" fill-opacity="0.85"/>
+  <rect x="926" y="434" width="170" height="180" fill="none" stroke="#0A0B12" stroke-width="2"/>
+  <text x="938" y="460" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#FFF">Pictures</text>
+  <text x="938" y="478" font-family="'Courier New', Courier, monospace" font-size="11" fill="rgba(255,255,255,0.5)">1.82 GB</text>
+
+  <!-- Desktop — folder blue — bottom right, far right top -->
+  <rect x="1098" y="434" width="180" height="180" rx="0" fill="#4A90D9" fill-opacity="0.45"/>
+  <rect x="1098" y="434" width="180" height="180" fill="none" stroke="#0A0B12" stroke-width="2"/>
+  <text x="1110" y="460" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="12" font-weight="600" fill="#FFF">Desktop</text>
+  <text x="1110" y="476" font-family="'Courier New', Courier, monospace" font-size="11" fill="rgba(255,255,255,0.4)">890 MB</text>
+
+  <!-- .vscode — code green — small -->
+  <rect x="926" y="616" width="170" height="146" rx="0" fill="#2ECC71" fill-opacity="0.7"/>
+  <rect x="926" y="616" width="170" height="146" fill="none" stroke="#0A0B12" stroke-width="2"/>
+  <text x="938" y="640" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="12" font-weight="600" fill="#FFF">.vscode</text>
+  <text x="938" y="656" font-family="'Courier New', Courier, monospace" font-size="11" fill="rgba(255,255,255,0.4)">567 MB</text>
+
+  <!-- Music + others — small tiles -->
+  <rect x="1098" y="616" width="90" height="146" rx="0" fill="#1ABC9C" fill-opacity="0.7"/>
+  <rect x="1098" y="616" width="90" height="146" fill="none" stroke="#0A0B12" stroke-width="2"/>
+  <text x="1106" y="640" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#FFF">Music</text>
+
+  <rect x="1190" y="616" width="88" height="146" rx="0" fill="#7F8C8D" fill-opacity="0.6"/>
+  <rect x="1190" y="616" width="88" height="146" fill="none" stroke="#0A0B12" stroke-width="2"/>
+  <text x="1198" y="640" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="11" font-weight="600" fill="#FFF">Other</text>
+
+  <!-- ── Status bar ── -->
+  <rect x="0" y="764" width="1280" height="36" fill="#0E1017"/>
+  <line x1="0" y1="764" x2="1280" y2="764" stroke="#1A1D2E" stroke-width="1"/>
+  <text x="16" y="786" font-family="'Courier New', Courier, monospace" font-size="11" fill="#444">2,614,891 files</text>
+  <text x="138" y="786" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="11" fill="#2A2D3E">·</text>
+  <text x="148" y="786" font-family="'Courier New', Courier, monospace" font-size="11" fill="#444">61.86 GB total</text>
+  <text x="270" y="786" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="11" fill="#2A2D3E">·</text>
+  <text x="280" y="786" font-family="'Courier New', Courier, monospace" font-size="11" fill="#444">C:</text>
+  <text x="1120" y="786" text-anchor="end" font-family="'Courier New', Courier, monospace" font-size="11" fill="#333">11 items shown</text>
+</svg>

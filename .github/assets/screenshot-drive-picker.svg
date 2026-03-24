@@ -1,0 +1,76 @@
+<svg viewBox="0 0 1280 800" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="bg-top" cx="50%" cy="0%" r="60%">
+      <stop offset="0%" stop-color="#C0FF44" stop-opacity="0.06"/>
+      <stop offset="100%" stop-color="#C0FF44" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="bg-br" cx="90%" cy="90%" r="40%">
+      <stop offset="0%" stop-color="#4A90D9" stop-opacity="0.04"/>
+      <stop offset="100%" stop-color="#4A90D9" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1280" height="800" fill="#0A0B12"/>
+  <rect width="1280" height="800" fill="url(#bg-top)"/>
+  <rect width="1280" height="800" fill="url(#bg-br)"/>
+
+  <!-- ── Logo mark (centered, 64x64 scaled from 48x48) ── -->
+  <g transform="translate(576, 232)">
+    <rect width="64" height="64" rx="13" fill="#0D0F1A"/>
+    <rect x="4" y="4" width="29" height="29" rx="4" fill="#C0FF44"/>
+    <rect x="36" y="4" width="24" height="13" rx="3" fill="#C0FF44" fill-opacity="0.55"/>
+    <rect x="36" y="20" width="24" height="13" rx="3" fill="#C0FF44" fill-opacity="0.30"/>
+    <rect x="4" y="36" width="13" height="24" rx="3" fill="#C0FF44" fill-opacity="0.65"/>
+    <rect x="20" y="36" width="13" height="24" rx="3" fill="#C0FF44" fill-opacity="0.38"/>
+    <rect x="36" y="36" width="24" height="24" rx="3" fill="#C0FF44" fill-opacity="0.18"/>
+  </g>
+
+  <!-- Title -->
+  <text x="640" y="338" text-anchor="middle" font-family="'Courier New', Courier, monospace" font-size="28" font-weight="700" fill="#FFFFFF" letter-spacing="-0.5">FSExplorer</text>
+
+  <!-- Subtitle -->
+  <text x="640" y="362" text-anchor="middle" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="12" fill="#444" letter-spacing="2">DISK SPACE ANALYZER</text>
+
+  <!-- ── Drive Cards ── -->
+  <!-- Card width 220, gap 16 → total 3×220+2×16=692, start at 640-346=294 -->
+
+  <!-- C: card (critical — 87%) -->
+  <rect x="294" y="402" width="220" height="196" rx="12" fill="#0E1017" stroke="#2A2030" stroke-width="1"/>
+  <!-- Card header -->
+  <text x="314" y="436" font-family="'Courier New', Courier, monospace" font-size="22" font-weight="700" fill="#FFFFFF">C:</text>
+  <text x="344" y="434" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10" fill="#444" letter-spacing="1">WINDOWS</text>
+  <!-- Bar (critical red) -->
+  <rect x="314" y="448" width="180" height="3" rx="1.5" fill="#1A1D2E"/>
+  <rect x="314" y="448" width="157" height="3" rx="1.5" fill="#FF4757"/>
+  <!-- Stats row -->
+  <text x="314" y="468" font-family="'Courier New', Courier, monospace" font-size="11" fill="#666">871 GB used</text>
+  <text x="404" y="468" text-anchor="middle" font-family="'Courier New', Courier, monospace" font-size="12" font-weight="700" fill="#FF4757">87%</text>
+  <text x="494" y="468" text-anchor="end" font-family="'Courier New', Courier, monospace" font-size="11" fill="#444">1 TB</text>
+  <!-- Free -->
+  <text x="314" y="486" font-family="'Courier New', Courier, monospace" font-size="11" fill="#444">129 GB free</text>
+  <!-- CTA -->
+  <text x="314" y="578" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="11" fill="#C0FF44">Analyze →</text>
+
+  <!-- D: card (62%) -->
+  <rect x="530" y="402" width="220" height="196" rx="12" fill="#0E1017" stroke="#1E2535" stroke-width="1"/>
+  <text x="550" y="436" font-family="'Courier New', Courier, monospace" font-size="22" font-weight="700" fill="#FFFFFF">D:</text>
+  <text x="580" y="434" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10" fill="#444" letter-spacing="1">GAMES</text>
+  <rect x="550" y="448" width="180" height="3" rx="1.5" fill="#1A1D2E"/>
+  <rect x="550" y="448" width="112" height="3" rx="1.5" fill="#C0FF44"/>
+  <text x="550" y="468" font-family="'Courier New', Courier, monospace" font-size="11" fill="#666">1.24 TB used</text>
+  <text x="640" y="468" text-anchor="middle" font-family="'Courier New', Courier, monospace" font-size="12" font-weight="700" fill="#C0FF44">62%</text>
+  <text x="730" y="468" text-anchor="end" font-family="'Courier New', Courier, monospace" font-size="11" fill="#444">2 TB</text>
+  <text x="550" y="486" font-family="'Courier New', Courier, monospace" font-size="11" fill="#444">762 GB free</text>
+
+  <!-- E: card (41%) -->
+  <rect x="766" y="402" width="220" height="196" rx="12" fill="#0E1017" stroke="#1E2535" stroke-width="1"/>
+  <text x="786" y="436" font-family="'Courier New', Courier, monospace" font-size="22" font-weight="700" fill="#FFFFFF">E:</text>
+  <text x="816" y="434" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10" fill="#444" letter-spacing="1">STORAGE</text>
+  <rect x="786" y="448" width="180" height="3" rx="1.5" fill="#1A1D2E"/>
+  <rect x="786" y="448" width="74" height="3" rx="1.5" fill="#C0FF44"/>
+  <text x="786" y="468" font-family="'Courier New', Courier, monospace" font-size="11" fill="#666">1.86 TB used</text>
+  <text x="876" y="468" text-anchor="middle" font-family="'Courier New', Courier, monospace" font-size="12" font-weight="700" fill="#C0FF44">41%</text>
+  <text x="966" y="468" text-anchor="end" font-family="'Courier New', Courier, monospace" font-size="11" fill="#444">4 TB</text>
+  <text x="786" y="486" font-family="'Courier New', Courier, monospace" font-size="11" fill="#444">2.14 TB free</text>
+</svg>

@@ -58,7 +58,21 @@ jobs:
       - name: Install frontend deps
         run: npm ci
 
-      - name: Build
+      - name: Check for Apple signing secrets
+        id: signing
+        run: |
+          if [ -n "${{ secrets.APPLE_CERTIFICATE }}" ]; then
+            echo "available=true" >> $GITHUB_OUTPUT
+          else
+            echo "available=false" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Build (unsigned)
+        if: steps.signing.outputs.available == 'false'
+        run: npm run tauri build
+
+      - name: Build (signed)
+        if: steps.signing.outputs.available == 'true'
         run: npm run tauri build
         env:
           APPLE_CERTIFICATE: ${{ secrets.APPLE_CERTIFICATE }}

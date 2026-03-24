@@ -1,0 +1,204 @@
+<svg viewBox="0 0 1280 800" xmlns="http://www.w3.org/2000/svg">
+  <!-- ── Toolbar ── -->
+  <rect width="1280" height="48" fill="#0E1017"/>
+  <line x1="0" y1="48" x2="1280" y2="48" stroke="#1A1D2E" stroke-width="1"/>
+
+  <!-- Toolbar: logo mark (20x20) -->
+  <g transform="translate(12,14) scale(0.417)">
+    <rect width="48" height="48" rx="10" fill="#0D0F1A"/>
+    <rect x="3" y="3" width="22" height="22" rx="3" fill="#C0FF44"/>
+    <rect x="27" y="3" width="18" height="10" rx="2" fill="#C0FF44" fill-opacity="0.55"/>
+    <rect x="27" y="15" width="18" height="10" rx="2" fill="#C0FF44" fill-opacity="0.30"/>
+    <rect x="3" y="27" width="10" height="18" rx="2" fill="#C0FF44" fill-opacity="0.65"/>
+    <rect x="15" y="27" width="10" height="18" rx="2" fill="#C0FF44" fill-opacity="0.38"/>
+    <rect x="27" y="27" width="18" height="18" rx="2" fill="#C0FF44" fill-opacity="0.18"/>
+  </g>
+
+  <!-- Toolbar: drive label -->
+  <text x="42" y="29" font-family="'Courier New', Courier, monospace" font-size="15" font-weight="700" fill="#FFFFFF">C:</text>
+  <text x="62" y="29" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="11" fill="#555">871 GB / 1 TB · 87% used</text>
+
+  <!-- Toolbar: center controls -->
+  <text x="484" y="20" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10" fill="#444">TYPE</text>
+  <rect x="484" y="26" width="88" height="16" rx="3" fill="#12151F" stroke="#1E2535" stroke-width="1"/>
+  <text x="492" y="38" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="11" fill="#888">All</text>
+
+  <text x="586" y="20" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="10" fill="#444">SORT</text>
+  <rect x="586" y="26" width="88" height="16" rx="3" fill="#12151F" stroke="#1E2535" stroke-width="1"/>
+  <text x="594" y="38" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="11" fill="#888">Size ↓</text>
+
+  <!-- View toggle -->
+  <rect x="688" y="14" width="28" height="22" rx="4" fill="#C0FF44" fill-opacity="0.12" stroke="#C0FF44" stroke-opacity="0.4" stroke-width="1"/>
+  <text x="702" y="29" text-anchor="middle" font-family="'Courier New', Courier, monospace" font-size="14" fill="#C0FF44">≡</text>
+  <rect x="718" y="14" width="28" height="22" rx="4" fill="#12151F" stroke="#1E2535" stroke-width="1"/>
+  <text x="732" y="29" text-anchor="middle" font-family="'Courier New', Courier, monospace" font-size="14" fill="#555">⊞</text>
+
+  <!-- Rescan button -->
+  <rect x="1178" y="12" width="88" height="24" rx="4" fill="#12151F" stroke="#1E2535" stroke-width="1"/>
+  <text x="1222" y="28" text-anchor="middle" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="12" fill="#888">↻ Rescan</text>
+
+  <!-- ── Breadcrumb ── -->
+  <rect x="0" y="48" width="1280" height="32" fill="#0A0B12"/>
+  <line x1="0" y1="80" x2="1280" y2="80" stroke="#14172A" stroke-width="1"/>
+  <text x="16" y="68" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" fill="#C0FF44">C:</text>
+  <text x="36" y="68" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" fill="#333">›</text>
+  <text x="48" y="68" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" fill="#555">Users</text>
+  <text x="92" y="68" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" fill="#333">›</text>
+  <text x="104" y="68" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" fill="#CCCCCC">jason</text>
+
+  <!-- ── List header ── -->
+  <rect x="0" y="80" width="1280" height="32" fill="#0E1017"/>
+  <line x1="0" y1="112" x2="1280" y2="112" stroke="#1A1D2E" stroke-width="1"/>
+  <text x="52" y="100" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="11" fill="#444" letter-spacing="0.5">NAME</text>
+  <text x="544" y="100" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="11" fill="#444" letter-spacing="0.5">SIZE</text>
+  <text x="680" y="100" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="11" fill="#444" letter-spacing="0.5">TYPE</text>
+  <text x="860" y="100" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="11" fill="#444" letter-spacing="0.5">% OF PARENT</text>
+
+  <!-- ── List rows ── Row height: 43px, starting at y=112 -->
+  <!-- Helper: icon triangle for dirs = ▶, color dot for files -->
+
+  <!-- Row data: [name, size, type, color, bar%, barColor] -->
+
+  <!-- Row 1: AppData -->
+  <rect x="0" y="112" width="1280" height="43" fill="#0A0B12"/>
+  <line x1="0" y1="155" x2="1280" y2="155" stroke="#12141F" stroke-width="1"/>
+  <text x="20" y="138" font-family="'Courier New', Courier, monospace" font-size="13" fill="#4A90D9">▶</text>
+  <text x="38" y="138" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" fill="#DDDDDD">AppData</text>
+  <text x="600" y="138" text-anchor="end" font-family="'Courier New', Courier, monospace" font-size="13" fill="#AAAAAA">45.21 GB</text>
+  <circle cx="688" cy="134" r="5" fill="#4A90D9"/>
+  <text x="700" y="138" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" fill="#666">Folder</text>
+  <rect x="860" y="127" width="320" height="5" rx="2.5" fill="#12151F"/>
+  <rect x="860" y="127" width="234" height="5" rx="2.5" fill="#4A90D9"/>
+  <text x="1196" y="138" font-family="'Courier New', Courier, monospace" font-size="12" fill="#888">73.1%</text>
+
+  <!-- Row 2: .cargo -->
+  <rect x="0" y="155" width="1280" height="43" fill="#0C0D18"/>
+  <line x1="0" y1="198" x2="1280" y2="198" stroke="#12141F" stroke-width="1"/>
+  <text x="20" y="181" font-family="'Courier New', Courier, monospace" font-size="13" fill="#4A90D9">▶</text>
+  <text x="38" y="181" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" fill="#DDDDDD">.cargo</text>
+  <text x="600" y="181" text-anchor="end" font-family="'Courier New', Courier, monospace" font-size="13" fill="#AAAAAA">12.84 GB</text>
+  <circle cx="688" cy="177" r="5" fill="#4A90D9"/>
+  <text x="700" y="181" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" fill="#666">Folder</text>
+  <rect x="860" y="170" width="320" height="5" rx="2.5" fill="#12151F"/>
+  <rect x="860" y="170" width="66" height="5" rx="2.5" fill="#4A90D9"/>
+  <text x="1196" y="181" font-family="'Courier New', Courier, monospace" font-size="12" fill="#888">20.7%</text>
+
+  <!-- Row 3: Videos -->
+  <rect x="0" y="198" width="1280" height="43" fill="#0A0B12"/>
+  <line x1="0" y1="241" x2="1280" y2="241" stroke="#12141F" stroke-width="1"/>
+  <text x="20" y="224" font-family="'Courier New', Courier, monospace" font-size="13" fill="#4A90D9">▶</text>
+  <text x="38" y="224" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" fill="#DDDDDD">Videos</text>
+  <text x="600" y="224" text-anchor="end" font-family="'Courier New', Courier, monospace" font-size="13" fill="#AAAAAA">8.43 GB</text>
+  <circle cx="688" cy="220" r="5" fill="#4A90D9"/>
+  <text x="700" y="224" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" fill="#666">Folder</text>
+  <rect x="860" y="213" width="320" height="5" rx="2.5" fill="#12151F"/>
+  <rect x="860" y="213" width="44" height="5" rx="2.5" fill="#4A90D9"/>
+  <text x="1196" y="224" font-family="'Courier New', Courier, monospace" font-size="12" fill="#888">13.6%</text>
+
+  <!-- Row 4: Downloads -->
+  <rect x="0" y="241" width="1280" height="43" fill="#0C0D18"/>
+  <line x1="0" y1="284" x2="1280" y2="284" stroke="#12141F" stroke-width="1"/>
+  <text x="20" y="267" font-family="'Courier New', Courier, monospace" font-size="13" fill="#4A90D9">▶</text>
+  <text x="38" y="267" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" fill="#DDDDDD">Downloads</text>
+  <text x="600" y="267" text-anchor="end" font-family="'Courier New', Courier, monospace" font-size="13" fill="#AAAAAA">6.12 GB</text>
+  <circle cx="688" cy="263" r="5" fill="#4A90D9"/>
+  <text x="700" y="267" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" fill="#666">Folder</text>
+  <rect x="860" y="256" width="320" height="5" rx="2.5" fill="#12151F"/>
+  <rect x="860" y="256" width="32" height="5" rx="2.5" fill="#4A90D9"/>
+  <text x="1196" y="267" font-family="'Courier New', Courier, monospace" font-size="12" fill="#888">9.9%</text>
+
+  <!-- Row 5: Documents -->
+  <rect x="0" y="284" width="1280" height="43" fill="#0A0B12"/>
+  <line x1="0" y1="327" x2="1280" y2="327" stroke="#12141F" stroke-width="1"/>
+  <text x="20" y="310" font-family="'Courier New', Courier, monospace" font-size="13" fill="#4A90D9">▶</text>
+  <text x="38" y="310" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" fill="#DDDDDD">Documents</text>
+  <text x="600" y="310" text-anchor="end" font-family="'Courier New', Courier, monospace" font-size="13" fill="#AAAAAA">2.31 GB</text>
+  <circle cx="688" cy="306" r="5" fill="#4A90D9"/>
+  <text x="700" y="310" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" fill="#666">Folder</text>
+  <rect x="860" y="299" width="320" height="5" rx="2.5" fill="#12151F"/>
+  <rect x="860" y="299" width="12" height="5" rx="2.5" fill="#4A90D9"/>
+  <text x="1196" y="310" font-family="'Courier New', Courier, monospace" font-size="12" fill="#888">3.7%</text>
+
+  <!-- Row 6: Pictures -->
+  <rect x="0" y="327" width="1280" height="43" fill="#0C0D18"/>
+  <line x1="0" y1="370" x2="1280" y2="370" stroke="#12141F" stroke-width="1"/>
+  <text x="20" y="353" font-family="'Courier New', Courier, monospace" font-size="13" fill="#4A90D9">▶</text>
+  <text x="38" y="353" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" fill="#DDDDDD">Pictures</text>
+  <text x="600" y="353" text-anchor="end" font-family="'Courier New', Courier, monospace" font-size="13" fill="#AAAAAA">1.82 GB</text>
+  <circle cx="688" cy="349" r="5" fill="#4A90D9"/>
+  <text x="700" y="353" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" fill="#666">Folder</text>
+  <rect x="860" y="342" width="320" height="5" rx="2.5" fill="#12151F"/>
+  <rect x="860" y="342" width="9" height="5" rx="2.5" fill="#4A90D9"/>
+  <text x="1196" y="353" font-family="'Courier New', Courier, monospace" font-size="12" fill="#888">2.9%</text>
+
+  <!-- Row 7: Desktop -->
+  <rect x="0" y="370" width="1280" height="43" fill="#0A0B12"/>
+  <line x1="0" y1="413" x2="1280" y2="413" stroke="#12141F" stroke-width="1"/>
+  <text x="20" y="396" font-family="'Courier New', Courier, monospace" font-size="13" fill="#4A90D9">▶</text>
+  <text x="38" y="396" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" fill="#DDDDDD">Desktop</text>
+  <text x="600" y="396" text-anchor="end" font-family="'Courier New', Courier, monospace" font-size="13" fill="#AAAAAA">890.4 MB</text>
+  <circle cx="688" cy="392" r="5" fill="#4A90D9"/>
+  <text x="700" y="396" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" fill="#666">Folder</text>
+  <rect x="860" y="385" width="320" height="5" rx="2.5" fill="#12151F"/>
+  <rect x="860" y="385" width="4" height="5" rx="2.5" fill="#4A90D9"/>
+  <text x="1196" y="396" font-family="'Courier New', Courier, monospace" font-size="12" fill="#888">1.4%</text>
+
+  <!-- Row 8: .vscode -->
+  <rect x="0" y="413" width="1280" height="43" fill="#0C0D18"/>
+  <line x1="0" y1="456" x2="1280" y2="456" stroke="#12141F" stroke-width="1"/>
+  <text x="20" y="439" font-family="'Courier New', Courier, monospace" font-size="13" fill="#4A90D9">▶</text>
+  <text x="38" y="439" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" fill="#DDDDDD">.vscode</text>
+  <text x="600" y="439" text-anchor="end" font-family="'Courier New', Courier, monospace" font-size="13" fill="#AAAAAA">567.1 MB</text>
+  <circle cx="688" cy="435" r="5" fill="#4A90D9"/>
+  <text x="700" y="439" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" fill="#666">Folder</text>
+  <rect x="860" y="428" width="320" height="5" rx="2.5" fill="#12151F"/>
+  <rect x="860" y="428" width="3" height="5" rx="2.5" fill="#4A90D9"/>
+  <text x="1196" y="439" font-family="'Courier New', Courier, monospace" font-size="12" fill="#888">0.9%</text>
+
+  <!-- Row 9: Music -->
+  <rect x="0" y="456" width="1280" height="43" fill="#0A0B12"/>
+  <line x1="0" y1="499" x2="1280" y2="499" stroke="#12141F" stroke-width="1"/>
+  <text x="20" y="482" font-family="'Courier New', Courier, monospace" font-size="13" fill="#4A90D9">▶</text>
+  <text x="38" y="482" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" fill="#DDDDDD">Music</text>
+  <text x="600" y="482" text-anchor="end" font-family="'Courier New', Courier, monospace" font-size="13" fill="#AAAAAA">234.5 MB</text>
+  <circle cx="688" cy="478" r="5" fill="#4A90D9"/>
+  <text x="700" y="482" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" fill="#666">Folder</text>
+  <rect x="860" y="471" width="320" height="5" rx="2.5" fill="#12151F"/>
+  <rect x="860" y="471" width="1" height="5" rx="2.5" fill="#4A90D9"/>
+  <text x="1196" y="482" font-family="'Courier New', Courier, monospace" font-size="12" fill="#888">0.4%</text>
+
+  <!-- Row 10: ntuser.dat -->
+  <rect x="0" y="499" width="1280" height="43" fill="#0C0D18"/>
+  <line x1="0" y1="542" x2="1280" y2="542" stroke="#12141F" stroke-width="1"/>
+  <circle cx="27" cy="521" r="5" fill="#7F8C8D"/>
+  <text x="38" y="525" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" fill="#888">ntuser.dat</text>
+  <text x="600" y="525" text-anchor="end" font-family="'Courier New', Courier, monospace" font-size="13" fill="#666">48.2 MB</text>
+  <circle cx="688" cy="521" r="5" fill="#7F8C8D"/>
+  <text x="700" y="525" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" fill="#555">File</text>
+  <rect x="860" y="514" width="320" height="5" rx="2.5" fill="#12151F"/>
+  <text x="1196" y="525" font-family="'Courier New', Courier, monospace" font-size="12" fill="#555">0.1%</text>
+
+  <!-- Row 11: .gitconfig -->
+  <rect x="0" y="542" width="1280" height="43" fill="#0A0B12"/>
+  <line x1="0" y1="585" x2="1280" y2="585" stroke="#12141F" stroke-width="1"/>
+  <circle cx="27" cy="564" r="5" fill="#2ECC71"/>
+  <text x="38" y="568" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" fill="#888">.gitconfig</text>
+  <text x="600" y="568" text-anchor="end" font-family="'Courier New', Courier, monospace" font-size="13" fill="#666">2 KB</text>
+  <circle cx="688" cy="564" r="5" fill="#2ECC71"/>
+  <text x="700" y="568" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="13" fill="#555">Code</text>
+  <rect x="860" y="557" width="320" height="5" rx="2.5" fill="#12151F"/>
+  <text x="1196" y="568" font-family="'Courier New', Courier, monospace" font-size="12" fill="#555">0.0%</text>
+
+  <!-- Remaining rows: background fill -->
+  <rect x="0" y="585" width="1280" height="179" fill="#0A0B12"/>
+
+  <!-- ── Status bar ── -->
+  <rect x="0" y="764" width="1280" height="36" fill="#0E1017"/>
+  <line x1="0" y1="764" x2="1280" y2="764" stroke="#1A1D2E" stroke-width="1"/>
+  <text x="16" y="786" font-family="'Courier New', Courier, monospace" font-size="11" fill="#444">2,614,891 files</text>
+  <text x="138" y="786" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="11" fill="#2A2D3E">·</text>
+  <text x="148" y="786" font-family="'Courier New', Courier, monospace" font-size="11" fill="#444">61.86 GB total</text>
+  <text x="270" y="786" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="11" fill="#2A2D3E">·</text>
+  <text x="280" y="786" font-family="'Courier New', Courier, monospace" font-size="11" fill="#444">C:</text>
+  <text x="1120" y="786" text-anchor="end" font-family="'Courier New', Courier, monospace" font-size="11" fill="#333">11 items shown</text>
+</svg>
